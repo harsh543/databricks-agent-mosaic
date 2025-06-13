@@ -1,0 +1,32 @@
+# 💼 Investment Assistant using Databricks Mosaic AI Agent Framework
+
+A domain-specific AI assistant built with the [Databricks Mosaic AI Agent Framework](https://www.databricks.com/blog/mosaic-ai-agents) to help portfolio managers make informed stock investment decisions using real-time data, user preferences, and historical market trends.
+
+Inspired by:  
+➡️ [Building an Investment Assistant with the Databricks Mosaic AI Agent Framework](https://medium.com/@AI-on-Databricks/building-an-investment-assistant-with-the-databricks-mosaic-ai-agent-framework-d2ff276a61d2)
+
+---
+
+## 🚀 Key Features
+
+- 🔍 **Real-Time Stock Data**: Uses Yahoo Finance API to fetch current stock info.
+- 🧠 **LLM Agent for Investment Decisions**: Combines financial data, user risk profiles, and natural language prompts to produce Buy/Sell/Hold recommendations.
+- 📊 **Delta Table Integration**: Historical prices and synthetic customer preference data loaded from Unity Catalog Delta tables.
+- 📈 **Agent Evaluation**: Tracks cost, latency, grounding quality, and approval through Mosaic AI's built-in evaluation and review tools.
+- 🔁 **Human-in-the-Loop**: Integrated with Review App for gathering human feedback and improving model output quality.
+- 🏗 **Production-Ready**: Deployed via Databricks Model Serving with full observability and governance.
+
+---
+
+## 🏗 Architecture Overview
+
+```text
+[User Prompt] ──▶ [LLM Agent]
+     │
+     ├──▶ [Yahoo Finance API]
+     ├──▶ [Historical Data via Delta Table]
+     └──▶ [Customer Preferences via Delta Table]
+        ↓
+[Recommendation + Rationale]
+        ↓
+[Trace logged to MLflow] ──▶ [Review App] ──▶ [Evaluation + Fine-tuning]
