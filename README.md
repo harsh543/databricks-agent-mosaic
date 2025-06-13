@@ -30,5 +30,10 @@ Inspired by:
 [Recommendation + Rationale]
         ↓
 [Trace logged to MLflow] ──▶ [Review App] ──▶ [Evaluation + Fine-tuning]
+```
+
+
+## Demo
 
 ![Alt text](0_UeD4JEza7XpzSOXc.gif)
+
