@@ -37,3 +37,25 @@ Inspired by:
 
 ![Alt text](0_UeD4JEza7XpzSOXc.gif)
 
+
+[![Watch the Demo](https://img.youtube.com/vi/U1gPCrLHYNM/maxresdefault.jpg)](https://youtu.be/U1gPCrLHYNM)
+---
+
+## 🚀 What This Demo Covers
+
+- 🔍 **Real-Time Stock Data**: Integrated with Yahoo Finance API for up-to-date market data  
+- 🧠 **LLM-Driven Decision Engine**: Contextual Buy/Sell/Hold decisions based on user profiles and historical trends  
+- 📊 **Delta Tables + Unity Catalog**: Used for storing and querying synthetic investor data and historical prices  
+- 🔁 **Human-in-the-Loop Feedback**: Review App integration to evaluate and improve agent outputs  
+- ✅ **Agent Evaluation Metrics**: Track latency, cost, grounding quality, and approval  
+- 🏗 **Production-Ready Deployment**: Model deployed using Databricks Model Serving with governance and observability
+
+---
+## 🎯 Who Is This For?
+- Portfolio Managers and Financial Analysts  
+- GenAI Practitioners building LLM-based decision tools  
+- Databricks and Mosaic AI developers  
+- Anyone interested in finance + AI
+
+---
+
